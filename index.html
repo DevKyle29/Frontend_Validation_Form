@@ -9,7 +9,7 @@
 </head>
 <body>
  <div class="text-stretch">
-    New Task:<input type="text" name="text" id="text" required placeholder="Required and must contain no html characters"/>
+    New Task:<input type="text" name="text" id="text" required placeholder="Required and must contain no html characters" oninvalid="this.setCustomValidity('hello')" oninput="this.setCustomValidity('')" />
  </div>
  <div>
     Task description:  <textarea name="text" id="text" cols="18" rows="3" placeholder="Optional."></textarea>
