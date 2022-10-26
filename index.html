@@ -1,25 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form Validation</title>
-    <link rel="stylesheet" href="/Css/styles.css">
-</head>
-<body>
- <div class="text-stretch">
-    New Task:<input type="text" name="text" id="text" required placeholder="Required and must contain no html characters" oninvalid="this.setCustomValidity('hello')" oninput="this.setCustomValidity('')" />
- </div>
- <div>
-    Task description:  <textarea name="text" id="text" cols="18" rows="3" placeholder="Optional."></textarea>
- </div>
- <div>
-  Set Task due date: <input type="date" id="start" min="2000-01-01" max="2050-12-31"> <font color="red">Required. Must select a date</font>
- </div>
- <div>Set Task due time: <input type="time" id="appt" name="appt"> <font color="red">Required. Must select a time</font>
- </div>
- <button>Submit</button>
-    
-</body>
+    <link rel="stylesheet" href="/Css/styles.css" />
+  </head>
+  <body>
+    <div class="text-stretch">
+      New Task:<input
+        type="text"
+        name="text"
+        id="text"
+        required
+        placeholder="Required and must contain no html characters"
+      />
+    </div>
+    <div>
+      Task description:
+      <textarea
+        name="text"
+        id="text"
+        cols="18"
+        rows="3"
+        placeholder="Optional."
+      ></textarea>
+    </div>
+    <div>
+      Set Task due date:
+      <input type="date" id="start" min="2000-01-01" max="2050-12-31" />
+      <font color="red">Required. Must select a date</font>
+    </div>
+    <div>
+      Set Task due time: <input type="time" id="appt" name="appt" />
+      <font color="red">Required. Must select a time</font>
+    </div>
+    <button>Submit</button>
+  </body>
 </html>
