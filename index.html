@@ -8,15 +8,16 @@
     <link rel="stylesheet" href="/Css/styles.css" />
   </head>
   <body>
-    <div class="text-stretch">
+    <div class="text-stretch" >
       New Task:<input
         type="text"
         name="text"
-        id="text"
+        id="newTask"
         required
         placeholder="Required and must contain no html characters"
       />
     </div>
+    <p id="newTaskError">Please make sure your task contains no html characters</p>
     <div>
       Task description:
       <textarea
@@ -36,6 +37,8 @@
       Set Task due time: <input type="time" id="appt" name="appt" />
       <font color="red">Required. Must select a time</font>
     </div>
-    <button>Submit</button>
+    <button type="button" onclick="myValidation();">Submit</button>
+
+    <script src="/java script/myscript.js"></script>
   </body>
 </html>

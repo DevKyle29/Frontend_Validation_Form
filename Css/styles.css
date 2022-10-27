@@ -6,7 +6,8 @@
 div{display:block;
 }
 
-
+p{ display: none;
+   color:red;}
   
   
   
